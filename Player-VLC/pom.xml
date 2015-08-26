@@ -1,0 +1,25 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>br.com.ind</groupId>
+  <artifactId>Player-VLC</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <name>Player VLC</name>
+  <description>Player iterativo para séries</description>
+  <dependencies>
+  	<dependency>
+    	<groupId>uk.co.caprica</groupId>
+    	<artifactId>vlcj</artifactId>
+   		<version>3.9.0</version>
+	</dependency>
+	<dependency>
+		<groupId>net.java.dev.jna</groupId>
+		<artifactId>jna-platform</artifactId>
+		<version>4.1.0</version>
+	</dependency>
+	<dependency>
+		<groupId>net.java.dev.jna</groupId>
+		<artifactId>jna</artifactId>
+		<version>4.1.0</version>
+	</dependency>
+  </dependencies>
+</project>
