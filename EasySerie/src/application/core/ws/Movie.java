@@ -1,45 +1,54 @@
 package application.core.ws;
 
+import com.thoughtworks.xstream.annotations.XStreamAlias;
+
+
 public class Movie {
 	//<Movie Title="Masters of Sex" Year="2013–" imdbID="tt2137109" Type="series"/>
-	private String title;
-	private String year;
+	private String Title;
+	private String Year;
 	private String imdbID;
-	private String type;
 	
 	
 	public Movie() {
 	}
 	
-	public Movie(String title, String year, String imdbID, String type) {
-		this.title = title;
-		this.year = year;
+	public Movie(String title, String year, String imdbID) {
+		this.Title = title;
+		this.Year = year;
 		this.imdbID = imdbID;
-		this.type = type;
 	}
 
 	public String getTitle() {
-		return title;
+		return Title;
 	}
+
 	public void setTitle(String title) {
-		this.title = title;
+		Title = title;
 	}
+
 	public String getYear() {
-		return year;
+		return Year;
 	}
+
 	public void setYear(String year) {
-		this.year = year;
+		Year = year;
 	}
+
 	public String getImdbID() {
 		return imdbID;
 	}
+
 	public void setImdbID(String imdbID) {
-		this.imdbID = imdbID;
+		imdbID = imdbID;
 	}
-	public String getType() {
-		return type;
+
+
+
+	@Override
+	public String toString() {
+		return "Movie [Title=" + Title + ", Year=" + Year + ", imdbID=" + imdbID +"]";
 	}
-	public void setType(String type) {
-		this.type = type;
-	}
+
+	
 }
