@@ -3,6 +3,7 @@ package application.core.ws;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
+import java.io.OutputStream;
 import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URI;
@@ -31,8 +32,8 @@ public class ClienteOMDB {
 	 * @throws IOException
 	 */
 
-	public ArrayList<Movie> requestMovieList(String title, String year)  {
-		ArrayList<Movie> movieList = new ArrayList<Movie>();
+	public Root requestMovieList(String title, String year)  {
+		Root movieList;
 		URL url = null;
 		InputStream content = null;
 		URI uri = null;
@@ -62,7 +63,9 @@ public class ClienteOMDB {
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
+		System.out.println(content.toString());
 		movieList = clientXML.receiveXML(content);
+		System.out.println("LISTA "+movieList);
 		return movieList;
 	}
 }
