@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/jre1.8.0_60"/>
+	<classpathentry kind="con" path="org.eclipse.fx.ide.jdt.core.JAVAFX_CONTAINER"/>
+	<classpathentry kind="lib" path="src/resources/lib/xpp3-1.1.4c.jar"/>
+	<classpathentry kind="lib" path="src/resources/lib/xstream-1.4.8.jar" sourcepath="C:/Users/DesenvolvedorJava12/.m2/repository/com/thoughtworks/xstream/xstream/1.4.8/xstream-1.4.8-sources.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
